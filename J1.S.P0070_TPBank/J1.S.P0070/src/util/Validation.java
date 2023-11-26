@@ -1,7 +1,10 @@
-import com.sun.jdi.InvalidTypeException;
+package util;
+
+import exception.NumberNotInRangeException;
+import exception.StringEmptyException;
+import exception.StringNotMatchRegexException;
 
 import java.io.BufferedReader;
-import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class Validation {
@@ -10,6 +13,7 @@ public class Validation {
     public static final String EMAIL_PATTERN = "^[a-zA-Z]\\w+@(\\w+.?)+(\\w)$";
     public static final String ALL_MATCH_PATTERN = "[\\s\\S]*";
     public static final String PASSWORD_PATTERN = "^(?=.*[A-Za-z])(?=.*\\d)[A-Za-z\\d]{8,31}$";
+    public static final String ACCOUNT_NUMBER_PATTERN = "^[0-9][0-9]{9}$";
 
     private static BufferedReader input = new BufferedReader(new InputStreamReader(System.in));
 
@@ -104,7 +108,6 @@ public class Validation {
                 System.out.println(msg);
                 String result = input.readLine().trim();
                 if (result.isEmpty())
-                    //throw new StringEmptyException("Invalid input, input must be non-empty string");
                     throw new StringEmptyException(emptyErrorMsg);
                 if (!result.matches(regex))
                     throw new StringNotMatchRegexException(notMatchErrorMsg);
