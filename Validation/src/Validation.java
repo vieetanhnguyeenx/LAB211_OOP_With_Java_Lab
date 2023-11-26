@@ -8,7 +8,7 @@ public class Validation {
     public static final String NAME_PATTERN = "^[a-zA-Z][\\w .',]+$";
     public static final String PHONE_PATTERN = "^[0][0-9]{9}$";
     public static final String EMAIL_PATTERN = "^[a-zA-Z]\\w+@(\\w+.?)+(\\w)$";
-    public static final String ALL_PATTERN = "[\\s\\S]*";
+    public static final String ALL_MATCH_PATTERN = "[\\s\\S]*";
 
 
     private static BufferedReader input = new BufferedReader(new InputStreamReader(System.in));
@@ -34,12 +34,18 @@ public class Validation {
 
     // Check user input and catch exception with default error message
     public static int getInt(String msg) {
-        return getInt(msg, "Invalid input, input must be an integer", Integer.MIN_VALUE, Integer.MAX_VALUE);
+        return getInt(msg,
+                "Invalid input, input must be an integer",
+                Integer.MIN_VALUE,
+                Integer.MAX_VALUE);
     }
 
     // Check user input and catch exception with custom error message
     public static int getInt(String msg, String errorMsg) {
-        return getInt(msg, errorMsg, Integer.MIN_VALUE, Integer.MAX_VALUE);
+        return getInt(msg,
+                errorMsg,
+                Integer.MIN_VALUE,
+                Integer.MAX_VALUE);
     }
 
     // Check user input and catch exception with default error message and input in range
@@ -69,29 +75,39 @@ public class Validation {
 
     // Check user input and catch exception with default error message
     public static double getDouble(String msg) {
-        return getDouble(msg, "Invalid input, input must be a real number", Double.MIN_VALUE, Double.MAX_VALUE);
+        return getDouble(msg,
+                "Invalid input, input must be a real number",
+                Double.MIN_VALUE,
+                Double.MAX_VALUE);
     }
 
     // Check user input and catch exception with custom error message
     public static double getDouble(String msg, String errorMsg) {
-        return getDouble(msg, errorMsg, Double.MIN_VALUE, Double.MAX_VALUE);
+        return getDouble(msg,
+                errorMsg,
+                Double.MIN_VALUE,
+                Double.MAX_VALUE);
     }
 
     // Check user input and catch exception with default error message and input in range
     public static double getDouble(String msg, double min, double max) {
-        return getDouble(msg, "Invalid input, input must be a real number", min, max);
+        return getDouble(msg,
+                "Invalid input, input must be a real number",
+                min,
+                max);
     }
 
-    public static String getString(String msg, String errorMsg, String regex){
+    public static String getString(String msg, String errorMsg, String emptyErrorMsg, String regex, String notMatchErrorMsg){
         // Loop until get right format string
         while (true) {
             try {
                 System.out.println(msg);
                 String result = input.readLine().trim();
                 if (result.isEmpty())
-                    throw new StringEmptyException("Invalid input, input must be non-empty string");
+                    //throw new StringEmptyException("Invalid input, input must be non-empty string");
+                    throw new StringEmptyException(emptyErrorMsg);
                 if (!result.matches(regex))
-                    throw new StringNotMatchRegexException("Invalid input, input must be match regex " + regex);
+                    throw new StringNotMatchRegexException(notMatchErrorMsg);
 
                 return result;
 
@@ -107,11 +123,20 @@ public class Validation {
 
 
     public static String getString(String msg) {
-        return getString(msg, "Invalid input, input must be string", Validation.ALL_PATTERN);
+        return getString(msg,
+                "Invalid input, input must be string",
+                "Invalid input, input must be non-empty string",
+                Validation.ALL_MATCH_PATTERN,
+                "InvalidInput");
     }
 
-    public static String getString(String msg, String regex) {
-        return getString(msg,"Invalid input, input must be string", regex);
+    public static String getString(String msg, String regex, String notMatchErrorMsg) {
+        return getString(msg,
+                "Invalid input, input must be string",
+                "Invalid input, input must be non-empty string",
+                regex,
+                notMatchErrorMsg);
     }
+
 
 }
