@@ -4,12 +4,51 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Student implements Comparable<Student>{
+
+    public enum Course {
+
+        Java("Java", 1),
+        DotNet (".Net", 2),
+        CCPlus ("C/C++", 3);
+
+
+        private int id;
+        private String name;
+
+        private Course(String name, int id) {
+            this.name = name;
+            this.id = id;
+        }
+
+        public String getName() {
+            return name;
+        }
+
+        public int getId() {
+            return id;
+        }
+
+        public static Course getTypeByInt(int type) {
+            switch (type) {
+                case 1:
+                    return Java;
+                case 2:
+                    return DotNet;
+                case 3:
+                    return CCPlus;
+                default:
+                    throw new AssertionError();
+
+            }
+        }
+    }
+
     private int id;
     private String name;
     private String semester;
-    private StudentCourse.Course course;
+    private Course course;
 
-    public Student(int id, String name, String semester, StudentCourse.Course course) {
+    public Student(int id, String name, String semester, Course course) {
         this.id = id;
         this.name = name;
         this.semester = semester;
@@ -40,7 +79,7 @@ public class Student implements Comparable<Student>{
         this.semester = semester;
     }
 
-    public StudentCourse.Course getCourse() {
+    public Course getCourse() {
         return course;
     }
 
@@ -48,7 +87,7 @@ public class Student implements Comparable<Student>{
         return course.getName();
     }
 
-    public void setCourse(StudentCourse.Course course) {
+    public void setCourse(Course course) {
         this.course = course;
     }
 
