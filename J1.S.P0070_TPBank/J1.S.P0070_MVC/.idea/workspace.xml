@@ -2,22 +2,39 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="16a5d0f9-0cc5-49ee-a32a-bfed3dda81be" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/bo/AccountInputter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bo/AccountManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bo/CaptchaInputter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/AccountManagerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/MenuController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entity/Account.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exception/IncorrectCaptcha.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exception/NumberNotInRangeException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exception/StringEmptyException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exception/StringNotMatchRegexException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/language_en.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/language_vn.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ui/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/Captcha.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/LanguageLabel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/Validation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../J1.S.P0001_BubbleSort/J1.S.P0001_BubbleSortMVC/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../J1.S.P0001_BubbleSort/J1.S.P0001_BubbleSortMVC/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../J1.S.P0001_BubbleSort/J1.S.P0001_BubbleSortMVC/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../J1.S.P0001_BubbleSort/J1.S.P0001_BubbleSortMVC/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../J1.S.P0001_BubbleSort/J1.S.P0001_BubbleSortMVC/J1.S.P0001_BubbleSortMVC.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../J1.S.P0001_BubbleSort/J1.S.P0001_BubbleSortMVC/src/bo/ArrayDisplayer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../J1.S.P0001_BubbleSort/J1.S.P0001_BubbleSortMVC/src/bo/ArrayGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../J1.S.P0001_BubbleSort/J1.S.P0001_BubbleSortMVC/src/bo/BubbleSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../J1.S.P0001_BubbleSort/J1.S.P0001_BubbleSortMVC/src/bo/SortInputter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../J1.S.P0001_BubbleSort/J1.S.P0001_BubbleSortMVC/src/controller/SortController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../J1.S.P0001_BubbleSort/J1.S.P0001_BubbleSortMVC/src/exception/NumberNotInRangeException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../J1.S.P0001_BubbleSort/J1.S.P0001_BubbleSortMVC/src/exception/StringEmptyException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../J1.S.P0001_BubbleSort/J1.S.P0001_BubbleSortMVC/src/exception/StringNotMatchRegexException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../J1.S.P0001_BubbleSort/J1.S.P0001_BubbleSortMVC/src/ui/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../J1.S.P0001_BubbleSort/J1.S.P0001_BubbleSortMVC/src/utils/ArrayUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../J1.S.P0001_BubbleSort/J1.S.P0001_BubbleSortMVC/src/utils/Validation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../J1.S.P0071_Task/J1.S.P0071/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../J1.S.P0071_Task/J1.S.P0071/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../J1.S.P0071_Task/J1.S.P0071/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../J1.S.P0071_Task/J1.S.P0071/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../J1.S.P0071_Task/J1.S.P0071/J1.S.P0071.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../J1.S.P0071_Task/J1.S.P0071/src/bo/TaskInputter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../J1.S.P0071_Task/J1.S.P0071/src/bo/TaskManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../J1.S.P0071_Task/J1.S.P0071/src/controller/MenuController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../J1.S.P0071_Task/J1.S.P0071/src/controller/TaskController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../J1.S.P0071_Task/J1.S.P0071/src/entity/Task.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../J1.S.P0071_Task/J1.S.P0071/src/exception/IncorrectCaptcha.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../J1.S.P0071_Task/J1.S.P0071/src/exception/NumberNotInRangeException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../J1.S.P0071_Task/J1.S.P0071/src/exception/ObjectNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../J1.S.P0071_Task/J1.S.P0071/src/exception/StringEmptyException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../J1.S.P0071_Task/J1.S.P0071/src/exception/StringNotMatchRegexException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../J1.S.P0071_Task/J1.S.P0071/src/ui/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../J1.S.P0071_Task/J1.S.P0071/src/utils/Validation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -49,7 +66,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../J1.S.P0071_Task/J1.S.P0071" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -75,17 +92,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
@@ -100,7 +106,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1701130789968</updated>
-      <workItem from="1701130791221" duration="5062000" />
+      <workItem from="1701130791221" duration="5283000" />
+      <workItem from="1701183683393" duration="1359000" />
+      <workItem from="1701217428225" duration="1222000" />
     </task>
     <servers />
   </component>
@@ -117,5 +125,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
