@@ -6,11 +6,21 @@ import utils.Validation;
 import java.time.LocalDate;
 
 public class TaskInputter {
+    private Task task;
 
     public TaskInputter() {
+        task = new Task();
     }
 
-    public Task createTask() {
+    public Task getTask() {
+        return task;
+    }
+
+    public void setTask(Task task) {
+        this.task = task;
+    }
+
+    public void createTask() {
         String name = Validation.getString("Requirement Name: ",
                 Validation.NAME_PATTERN,
                 "Invalid input, input must be real name!");
@@ -40,14 +50,15 @@ public class TaskInputter {
 
         String assignee = Validation.getString("Assignee: ");
         String reviewer = Validation.getString("Reviewer: ");
-        return new Task(-1,
-                type,
-                name,
-                localDate,
-                from,
-                to,
-                assignee,
-                reviewer);
+
+        task.setId(-1);
+        task.setType(type);
+        task.setRequirementName(name);
+        task.setDate(localDate);
+        task.setPlantFrom(from);
+        task.setPlantTo(to);
+        task.setAssignee(assignee);
+        task.setExpert(reviewer);
     }
 
     public int deleteTask() {

@@ -10,12 +10,13 @@ public class TaskController {
     private TaskManager taskManager;
 
     public TaskController() {
-        taskInputter = new TaskInputter();
         taskManager = new TaskManager();
     }
 
     public void addTask() {
-        Task task = taskInputter.createTask();
+        taskInputter = new TaskInputter();
+        taskInputter.createTask();
+        Task task = taskInputter.getTask();
         taskManager.addTask(task);
 
     }
