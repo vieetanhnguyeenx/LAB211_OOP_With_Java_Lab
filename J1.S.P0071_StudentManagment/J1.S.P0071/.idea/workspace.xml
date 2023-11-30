@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fe3bcdd5-1367-4a85-8fcc-2b89b616206f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/bo/StudentInputer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bo/StudentManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/StudentManageController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exception/EnumNotFoundException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entity/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entity/StudentCourse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bo/StudentManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bo/StudentManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/StudentManageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/StudentManageController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ui/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -64,19 +60,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
@@ -93,6 +76,7 @@
       <updated>1701228414178</updated>
       <workItem from="1701228415574" duration="2365000" />
       <workItem from="1701271658750" duration="2366000" />
+      <workItem from="1701305121935" duration="1296000" />
     </task>
     <servers />
   </component>
