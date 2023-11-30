@@ -20,6 +20,8 @@ public class Validation {
 
     public static final String TIME_NUMBER_PATTERN = "^\\d+\\.([0]|[5])$";
 
+    public static final String YES_NO_PATTERN = "^([yY]|[nN]){1}$";
+
     private static BufferedReader input = new BufferedReader(new InputStreamReader(System.in));
 
     // Check user input and catch exception with custom error message
@@ -27,7 +29,7 @@ public class Validation {
         // Loop until get right format number
         while (true) {
             try {
-                System.out.print(msg);
+                System.out.println(msg);
                 int result = Integer.parseInt(input.readLine().trim());
                 if (result < min || result > max)
                     throw new NumberNotInRangeException("Invalid input, number must be in range [" + min + ", " + max +"]");
@@ -110,7 +112,7 @@ public class Validation {
         // Loop until get right format string
         while (true) {
             try {
-                System.out.print(msg);
+                System.out.println(msg);
                 String result = input.readLine().trim();
                 if (result.isEmpty())
                     throw new StringEmptyException(emptyErrorMsg);
@@ -141,7 +143,7 @@ public class Validation {
     public static String getString(String msg, String regex, String notMatchErrorMsg) {
         return getString(msg,
                 "Invalid input, input must be string",
-                "Invalid input, input must be non-empty",
+                "Invalid input, input must be non-empty string",
                 regex,
                 notMatchErrorMsg);
     }
@@ -186,5 +188,18 @@ public class Validation {
                 min,
                 max
                 );
+    }
+
+    public static boolean getYesNo(String msg, String errorMsg) {
+        while (true) {
+            try{
+                String s = getString(msg, YES_NO_PATTERN, "Invalid input, Input only y/n");
+                if(s.equalsIgnoreCase("y"))
+                    return true;
+                return false;
+            }catch (Exception ex) {
+                System.out.println(errorMsg);
+            }
+        }
     }
 }
