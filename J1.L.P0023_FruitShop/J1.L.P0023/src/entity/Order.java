@@ -1,17 +1,18 @@
 package entity;
 
+import java.util.ArrayList;
 import java.util.Map;
 
 public class Order {
     private int id;
     private String customerName;
     private double totalPrice;
-    private Map<Integer, OrderDetail> orderDetails;
+    private ArrayList<OrderDetail> orderDetails;
 
     public Order() {
     }
 
-    public Order(int id, String customerName, double totalPrice, Map<Integer, OrderDetail> orderDetails) {
+    public Order(int id, String customerName, double totalPrice, ArrayList<OrderDetail> orderDetails) {
         this.id = id;
         this.customerName = customerName;
         this.totalPrice = totalPrice;
@@ -42,11 +43,11 @@ public class Order {
         this.totalPrice = totalPrice;
     }
 
-    public Map<Integer, OrderDetail> getOrderDetails() {
+    public ArrayList<OrderDetail> getOrderDetails() {
         return orderDetails;
     }
 
-    public void setOrderDetails(Map<Integer, OrderDetail> orderDetails) {
+    public void setOrderDetails(ArrayList<OrderDetail> orderDetails) {
         this.orderDetails = orderDetails;
     }
 }

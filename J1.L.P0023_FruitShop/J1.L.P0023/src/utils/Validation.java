@@ -1,5 +1,6 @@
 package utils;
 
+import exception.IncorrectKeyValue;
 import exception.NumberNotInRangeException;
 import exception.StringEmptyException;
 import exception.StringNotMatchRegexException;
@@ -9,6 +10,7 @@ import java.io.InputStreamReader;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.time.format.DateTimeParseException;
+import java.util.Set;
 
 public class Validation {
     public static final String NAME_PATTERN = "^[a-zA-Z][\\w .',]+$";
@@ -200,6 +202,22 @@ public class Validation {
             }catch (Exception ex) {
                 System.out.println(errorMsg);
             }
+        }
+    }
+
+    public static int getIntInKeySet(String msg, int min, int max, Set<Integer> key, String notInSetErrorMsg) {
+        while (true) {
+            try {
+                int result = getInt(msg, min, max);
+                if (!key.contains(result))
+                    throw new IncorrectKeyValue(notInSetErrorMsg);
+                return result;
+            } catch (IncorrectKeyValue incorrectKeyValue) {
+                System.out.println(incorrectKeyValue.getMessage());
+            } catch (Exception ex ) {
+                System.out.println(notInSetErrorMsg);
+            }
+
         }
     }
 }

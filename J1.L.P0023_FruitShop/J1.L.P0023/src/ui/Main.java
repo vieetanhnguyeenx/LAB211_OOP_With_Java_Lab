@@ -3,6 +3,9 @@ package ui;
 import controller.FruitShopController;
 import utils.Validation;
 
+import java.util.HashSet;
+import java.util.Set;
+
 public class Main {
     public static void main(String[] args) {
         FruitShopController controller = new FruitShopController();
@@ -21,6 +24,7 @@ public class Main {
                     controller.addFruits();
                     break;
                 case 2:
+                    controller.addOrder();
                     break;
                 case 3:
                     break;

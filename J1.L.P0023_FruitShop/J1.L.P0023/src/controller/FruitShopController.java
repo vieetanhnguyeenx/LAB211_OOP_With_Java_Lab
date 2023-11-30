@@ -1,8 +1,8 @@
 package controller;
 
-import bo.FruitInputer;
-import bo.FruitManager;
+import bo.*;
 import entity.Fruit;
+import entity.OrderDetail;
 import utils.Validation;
 
 import java.util.ArrayList;
@@ -11,6 +11,9 @@ import java.util.List;
 public class FruitShopController {
     private FruitInputer fruitInputer;
     private FruitManager fruitManager;
+    private OrderDetailInputer orderDetailInputer;
+    private OrderManager orderManager;
+    private OrderInputer orderInputer;
 
     public FruitShopController() {
         fruitManager = new FruitManager();
@@ -36,5 +39,28 @@ public class FruitShopController {
         for (Fruit f : addedFruits) {
             System.out.println(f);
         }
+    }
+
+    public void addOrder(){
+        System.out.println("List of fruit: ");
+        System.out.println(fruitManager);
+        orderDetailInputer = new OrderDetailInputer();
+        List<OrderDetail> orderDetailList = new ArrayList<>();
+        do {
+            int selectedId = Validation.getIntInKeySet("Enter select item",
+                    1,
+                    fruitManager.getLastId(),
+                    fruitManager.getIdSet(),
+                    "Invalid input, input must be in list");
+
+            Fruit selectedFruit = fruitManager.getFruitById(selectedId);
+
+            System.out.println("You selected: " + selectedFruit.getName());
+
+            orderDetailInputer.setOrderFruit(selectedFruit);
+            orderDetailInputer.inputOrderDetail();
+        }while (Validation.getYesNo("Do you want to order now (Y/N): ", "Invalid input (Y/N) only"));
+
+
     }
 }
