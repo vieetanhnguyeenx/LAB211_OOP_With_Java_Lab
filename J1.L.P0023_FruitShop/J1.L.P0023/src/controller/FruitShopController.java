@@ -6,7 +6,9 @@ import entity.OrderDetail;
 import utils.Validation;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class FruitShopController {
     private FruitInputer fruitInputer;
@@ -17,6 +19,7 @@ public class FruitShopController {
 
     public FruitShopController() {
         fruitManager = new FruitManager();
+        orderManager = new OrderManager();
     }
 
     private Fruit addFruit() {
@@ -32,7 +35,7 @@ public class FruitShopController {
         do {
             addedFruits.add(addFruit());
         }while (Validation.getYesNo("Do you want to continue (Y/N)",
-                "Invalid input!"));
+                "Invalid input!", true));
 
         System.out.println("List of added Fruits: ");
         System.out.println(String.format("%-15s%-25s%-15s%-15s%-15s", "ID", "Name", "Price", "Quantity", "Origin"));
@@ -42,25 +45,90 @@ public class FruitShopController {
     }
 
     public void addOrder(){
+        if (fruitManager.isOutOfStock()) {
+            System.out.println("Products are out of stock!");
+            return;
+        }
+
+        // List all fruit
         System.out.println("List of fruit: ");
         System.out.println(fruitManager);
         orderDetailInputer = new OrderDetailInputer();
-        List<OrderDetail> orderDetailList = new ArrayList<>();
+        Map<Integer, OrderDetail> orderDetailMap = new HashMap<>();
+
+        // Loop to get all order detail
         do {
+            if (fruitManager.isOutOfStock()) {
+                System.out.println("Products are out of stock!");
+                continue;
+            }
+            orderDetailInputer.setOrderDetail(new OrderDetail());
             int selectedId = Validation.getIntInKeySet("Enter select item",
                     1,
                     fruitManager.getLastId(),
                     fruitManager.getIdSet(),
                     "Invalid input, input must be in list");
 
-            Fruit selectedFruit = fruitManager.getFruitById(selectedId);
+            Fruit selectedFruit = fruitManager.getFruitInformationById(selectedId);
+            if (selectedFruit.getQuantity() <= 0) {
+                System.out.println("The product is out of stock!");
+                continue;
+            }
+
+            if (orderDetailMap.containsKey(selectedFruit.getId()))
+                if (selectedFruit.getQuantity() - orderDetailMap.get(selectedFruit.getId()).getQuantity() == 0) {
+                    System.out.println("The product is out of stock!");
+                    continue;
+                } else {
+                    selectedFruit.setQuantity(selectedFruit.getQuantity() - orderDetailMap.get(selectedFruit.getId()).getQuantity());
+                }
+
 
             System.out.println("You selected: " + selectedFruit.getName());
 
             orderDetailInputer.setOrderFruit(selectedFruit);
             orderDetailInputer.inputOrderDetail();
-        }while (Validation.getYesNo("Do you want to order now (Y/N): ", "Invalid input (Y/N) only"));
+            OrderDetail orderDetail = orderDetailInputer.getOrderDetail();
+            if (orderDetailMap.containsKey(selectedFruit.getId())) {
+                orderDetail.setQuantity(orderDetail.getQuantity() + orderDetailMap.get(selectedFruit.getId()).getQuantity());
+                orderDetailMap.put(selectedFruit.getId(), orderDetail);
+            }
+            else
+                orderDetailMap.put(selectedFruit.getId(), orderDetail);
+
+
+
+
+        }while (!Validation.getYesNo("Do you want to order now (Y/N): ",
+                "Invalid input (Y/N) only", true));
+
+        if(!orderDetailMap.isEmpty()) {
+            System.out.println(String.format("%-25s%-15s%-15s%-15s",
+                    "Product",
+                    "Quantity",
+                    "Price",
+                    "Amount"));
+
+            double total = 0;
+            for (Map.Entry<Integer, OrderDetail> entry : orderDetailMap.entrySet()) {
+                System.out.println(entry.getValue());
+                total += entry.getValue().getAmount();
+            }
+
+            System.out.println("Total: " + total + "$");
+
+            orderInputer = new OrderInputer(orderDetailMap);
+            orderInputer.inputOrder();
+
+            orderManager.addOrder(orderInputer.getOrder());
+            fruitManager.changeQuantity(orderInputer.getOrder());
+        }
 
 
     }
+
+    public void displayAllOrder() {
+        System.out.println(orderManager);
+    }
+
 }

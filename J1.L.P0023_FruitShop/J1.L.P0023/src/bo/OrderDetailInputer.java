@@ -9,6 +9,7 @@ public class OrderDetailInputer {
     private Fruit orderFruit;
 
     public OrderDetailInputer(){
+        orderDetail = new OrderDetail();
     }
     public OrderDetailInputer(Fruit fruit){
         this.orderFruit = fruit;

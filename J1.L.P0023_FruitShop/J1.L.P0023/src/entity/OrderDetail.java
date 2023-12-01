@@ -47,4 +47,17 @@ public class OrderDetail {
     public void setPrice(double price) {
         this.price = price;
     }
+
+    public double getAmount() {
+        return price * quantity;
+    }
+
+    @Override
+    public String toString() {
+        return String.format("%-25s%-15d%-15f$%-15f$\n",
+                fruitName,
+                quantity,
+                price,
+                price * quantity);
+    }
 }

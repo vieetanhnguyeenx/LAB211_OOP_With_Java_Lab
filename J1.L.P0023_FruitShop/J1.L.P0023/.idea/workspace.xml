@@ -2,19 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3063800b-566e-4ca7-a2a4-67bf261c9d04" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/bo/OrderDetailInputer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bo/OrderInputer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bo/OrderManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exception/IncorrectKeyValue.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/J1.L.P0023/bo/FruitManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/J1.L.P0023/bo/FruitManager.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/J1.L.P0023/controller/FruitShopController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/J1.L.P0023/controller/FruitShopController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/J1.L.P0023/entity/Fruit.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/J1.L.P0023/entity/Fruit.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/J1.L.P0023/entity/Order.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/J1.L.P0023/entity/Order.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/J1.L.P0023/ui/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/J1.L.P0023/ui/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/bo/FruitManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bo/FruitManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bo/OrderDetailInputer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bo/OrderDetailInputer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bo/OrderInputer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bo/OrderInputer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bo/OrderManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bo/OrderManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controller/FruitShopController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/FruitShopController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/entity/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entity/OrderDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/OrderDetail.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ui/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utils/Validation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/Validation.java" afterDir="false" />
     </list>
@@ -92,15 +91,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -122,6 +119,7 @@
       <updated>1701309856479</updated>
       <workItem from="1701309857772" duration="7677000" />
       <workItem from="1701350727150" duration="7884000" />
+      <workItem from="1701391134788" duration="8722000" />
     </task>
     <servers />
   </component>

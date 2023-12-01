@@ -24,9 +24,10 @@ public class Main {
                     controller.addFruits();
                     break;
                 case 2:
-                    controller.addOrder();
+                    controller.displayAllOrder();
                     break;
                 case 3:
+                    controller.addOrder();
                     break;
                 case 4:
                     return;

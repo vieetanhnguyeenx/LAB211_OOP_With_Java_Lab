@@ -1,6 +1,8 @@
 package bo;
 
 import entity.Fruit;
+import entity.Order;
+import entity.OrderDetail;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -9,20 +11,28 @@ import java.util.Set;
 public class FruitManager {
     private Map<Integer, Fruit> fruits;
     private int lastId;
+    private int totalQuantity;
 
     public FruitManager() {
         fruits = new HashMap<>();
         lastId = 0;
+        totalQuantity = 0;
     }
 
     public Fruit addFruit(Fruit fruit) {
         fruit.setId(++lastId);
         fruits.put(fruit.getId(), fruit);
+        totalQuantity += fruit.getQuantity();
         return fruit;
     }
 
     public Fruit getFruitById(int id) {
-        return fruits.get(id);
+        return  fruits.get(id);
+    }
+
+    public Fruit getFruitInformationById(int id) {
+        Fruit f = fruits.get(id);
+        return new Fruit(f.getId(), f.getName(), f.getPrice(), f.getQuantity(), f.getOrigin());
     }
 
     public int getLastId() {
@@ -31,6 +41,21 @@ public class FruitManager {
 
     public Set<Integer> getIdSet() {
         return fruits.keySet();
+    }
+
+    public boolean isEmpty(){
+        return fruits.isEmpty();
+    }
+
+    public void changeQuantity(Order order) {
+        for (Map.Entry<Integer, OrderDetail> entry : order.getOrderDetails().entrySet() ) {
+            fruits.get(entry.getKey()).setQuantity(fruits.get(entry.getKey()).getQuantity() - entry.getValue().getQuantity());
+            totalQuantity -= entry.getValue().getQuantity();
+        }
+    }
+
+    public boolean isOutOfStock() {
+        return !(totalQuantity > 0);
     }
 
     @Override

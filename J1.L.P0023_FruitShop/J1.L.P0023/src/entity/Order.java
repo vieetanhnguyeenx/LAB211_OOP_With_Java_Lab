@@ -7,12 +7,12 @@ public class Order {
     private int id;
     private String customerName;
     private double totalPrice;
-    private ArrayList<OrderDetail> orderDetails;
+    private Map<Integer, OrderDetail> orderDetails;
 
     public Order() {
     }
 
-    public Order(int id, String customerName, double totalPrice, ArrayList<OrderDetail> orderDetails) {
+    public Order(int id, String customerName, double totalPrice, Map<Integer, OrderDetail> orderDetails) {
         this.id = id;
         this.customerName = customerName;
         this.totalPrice = totalPrice;
@@ -43,11 +43,27 @@ public class Order {
         this.totalPrice = totalPrice;
     }
 
-    public ArrayList<OrderDetail> getOrderDetails() {
+    public Map<Integer, OrderDetail> getOrderDetails() {
         return orderDetails;
     }
 
-    public void setOrderDetails(ArrayList<OrderDetail> orderDetails) {
+    public void setOrderDetails(Map<Integer, OrderDetail> orderDetails) {
         this.orderDetails = orderDetails;
+    }
+
+    @Override
+    public String toString() {
+        String s = "Customer: " + customerName + "\n";
+        s+= String.format("%-25s%-15s%-15s%-15s\n", "Product", "Quantity", "Price", "Amount");
+        int i = 0;
+        for (Map.Entry<Integer, OrderDetail> entry : orderDetails.entrySet()){
+            s+= String.format(++i + "" + "%-25s%-15d%-15.1f%-15.1f\n",
+                    entry.getValue().getFruitName(),
+                    entry.getValue().getQuantity(),
+                    entry.getValue().getPrice(),
+                    entry.getValue().getQuantity() * entry.getValue().getPrice());
+        }
+        s += String.format("Total: %.2f$\n", totalPrice);
+        return s;
     }
 }

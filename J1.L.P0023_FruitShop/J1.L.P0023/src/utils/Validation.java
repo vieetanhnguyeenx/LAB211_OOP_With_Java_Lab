@@ -192,13 +192,13 @@ public class Validation {
                 );
     }
 
-    public static boolean getYesNo(String msg, String errorMsg) {
+    public static boolean getYesNo(String msg, String errorMsg, boolean yesValue) {
         while (true) {
             try{
                 String s = getString(msg, YES_NO_PATTERN, "Invalid input, Input only y/n");
                 if(s.equalsIgnoreCase("y"))
-                    return true;
-                return false;
+                    return yesValue;
+                return !yesValue;
             }catch (Exception ex) {
                 System.out.println(errorMsg);
             }
