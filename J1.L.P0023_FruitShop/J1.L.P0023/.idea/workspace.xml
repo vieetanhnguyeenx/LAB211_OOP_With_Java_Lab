@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3063800b-566e-4ca7-a2a4-67bf261c9d04" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bo/FruitManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bo/FruitManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bo/OrderDetailInputer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bo/OrderDetailInputer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../~$.L.P0023.docx" beforeDir="false" />
-    </list>
+    <list default="true" id="3063800b-566e-4ca7-a2a4-67bf261c9d04" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -100,7 +95,7 @@
       <workItem from="1701350727150" duration="7884000" />
       <workItem from="1701391134788" duration="9347000" />
       <workItem from="1701567446906" duration="3815000" />
-      <workItem from="1701656176600" duration="602000" />
+      <workItem from="1701656176600" duration="924000" />
     </task>
     <servers />
   </component>
