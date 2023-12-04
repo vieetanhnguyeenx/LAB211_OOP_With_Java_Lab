@@ -11,9 +11,6 @@ public class OrderDetailInputer {
     public OrderDetailInputer(){
         orderDetail = new OrderDetail();
     }
-    public OrderDetailInputer(Fruit fruit){
-        this.orderFruit = fruit;
-    }
 
     public OrderDetail getOrderDetail() {
         return orderDetail;
@@ -21,10 +18,6 @@ public class OrderDetailInputer {
 
     public void setOrderDetail(OrderDetail orderDetail) {
         this.orderDetail = orderDetail;
-    }
-
-    public Fruit getOrderFruit() {
-        return orderFruit;
     }
 
     public void setOrderFruit(Fruit orderFruit) {

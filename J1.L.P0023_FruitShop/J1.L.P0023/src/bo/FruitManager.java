@@ -43,9 +43,6 @@ public class FruitManager {
         return fruits.keySet();
     }
 
-    public boolean isEmpty(){
-        return fruits.isEmpty();
-    }
 
     public void changeQuantity(Order order) {
         for (Map.Entry<Integer, OrderDetail> entry : order.getOrderDetails().entrySet() ) {
