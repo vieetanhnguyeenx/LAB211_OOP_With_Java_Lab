@@ -21,7 +21,7 @@ public class TaskManager {
         return task;
     }
 
-    public int searchTaskById(int id) {
+    private int searchTaskById(int id) {
         if (id < 0)
             return -1;
 
@@ -32,6 +32,7 @@ public class TaskManager {
 
         return -1;
     }
+
 
     public Task deleteById(int id) throws ObjectNotFoundException {
         int index = searchTaskById(id);
