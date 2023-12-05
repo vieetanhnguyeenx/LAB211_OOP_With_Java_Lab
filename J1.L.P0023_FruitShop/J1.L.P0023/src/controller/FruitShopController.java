@@ -26,7 +26,8 @@ public class FruitShopController {
         fruitInputer = new FruitInputer();
         fruitInputer.inputFruitInformation();
         Fruit fruit = fruitInputer.getFruit();
-        return fruitManager.addFruit(fruit);
+        fruitManager.addFruit(fruit);
+        return fruit;
     }
 
     public void addFruits() {

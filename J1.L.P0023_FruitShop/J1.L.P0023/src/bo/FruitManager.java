@@ -19,11 +19,11 @@ public class FruitManager {
         totalQuantity = 0;
     }
 
-    public Fruit addFruit(Fruit fruit) {
+    public boolean addFruit(Fruit fruit) {
         fruit.setId(++lastId);
         fruits.put(fruit.getId(), fruit);
         totalQuantity += fruit.getQuantity();
-        return fruit;
+        return true;
     }
 
     public Fruit getFruitById(int id) {

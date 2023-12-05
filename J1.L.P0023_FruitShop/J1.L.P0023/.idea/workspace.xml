@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3063800b-566e-4ca7-a2a4-67bf261c9d04" name="Default Changelist" comment="" />
+    <list default="true" id="3063800b-566e-4ca7-a2a4-67bf261c9d04" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../J1.S.P0056_Worker/J1.S.P0056/src/bo/WorkerInputer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../J1.S.P0056_Worker/J1.S.P0056/src/bo/WorkerManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../J1.S.P0056_Worker/J1.S.P0056/src/bo/WorkerSalaryInputer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../J1.S.P0056_Worker/J1.S.P0056/src/bo/WorkerSalaryManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../J1.S.P0056_Worker/J1.S.P0056/src/controller/WorkerManageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bo/FruitManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bo/FruitManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/FruitShopController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/FruitShopController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../J1.S.P0056_Worker/J1.S.P0056/src/entity/SalaryHistory.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../J1.S.P0056_Worker/J1.S.P0056/src/entity/SalaryHistory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../J1.S.P0056_Worker/J1.S.P0056/src/entity/Worker.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../J1.S.P0056_Worker/J1.S.P0056/src/entity/Worker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../J1.S.P0056_Worker/J1.S.P0056/src/ui/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../J1.S.P0056_Worker/J1.S.P0056/src/ui/Main.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -76,6 +88,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
@@ -95,7 +118,9 @@
       <workItem from="1701350727150" duration="7884000" />
       <workItem from="1701391134788" duration="9347000" />
       <workItem from="1701567446906" duration="3815000" />
-      <workItem from="1701656176600" duration="924000" />
+      <workItem from="1701656176600" duration="3226000" />
+      <workItem from="1701702126552" duration="1456000" />
+      <workItem from="1701739181011" duration="312000" />
     </task>
     <servers />
   </component>
