@@ -205,17 +205,23 @@ public class Validation {
         }
     }
 
-    public static int getIntInKeySet(String msg, int min, int max, Set<Integer> key, String notInSetErrorMsg) {
+    public static int getIntWithKeySet(String msg, int min, int max, Set<Integer> key, String errorMsg, boolean inKeySet) {
         while (true) {
             try {
                 int result = getInt(msg, min, max);
-                if (!key.contains(result))
-                    throw new IncorrectKeyValue(notInSetErrorMsg);
+                if (inKeySet) {
+                    if (!key.contains(result))
+                        throw new IncorrectKeyValue(errorMsg);
+                } else {
+                    if (key.contains(result))
+                        throw new IncorrectKeyValue(errorMsg);
+                }
                 return result;
+
             } catch (IncorrectKeyValue incorrectKeyValue) {
                 System.out.println(incorrectKeyValue.getMessage());
             } catch (Exception ex ) {
-                System.out.println(notInSetErrorMsg);
+                System.out.println(errorMsg);
             }
 
         }

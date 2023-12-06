@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="3063800b-566e-4ca7-a2a4-67bf261c9d04" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../J1.S.P0056_Worker/J1.S.P0056/src/bo/WorkerInputer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../J1.S.P0056_Worker/J1.S.P0056/src/bo/WorkerInputer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../J1.S.P0056_Worker/J1.S.P0056/src/bo/WorkerManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../J1.S.P0056_Worker/J1.S.P0056/src/bo/WorkerManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +43,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../J1.S.P0071_Task/J1.S.P0071" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../J1.S.P0056_Worker/J1.S.P0056" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -102,7 +104,7 @@
       <workItem from="1701739181011" duration="964000" />
       <workItem from="1701777961854" duration="594000" />
       <workItem from="1701782378486" duration="596000" />
-      <workItem from="1701828333525" duration="658000" />
+      <workItem from="1701828333525" duration="1801000" />
     </task>
     <servers />
   </component>

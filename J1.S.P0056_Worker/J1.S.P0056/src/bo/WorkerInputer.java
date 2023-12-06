@@ -4,10 +4,11 @@ import entity.Worker;
 import exception.Validation;
 
 import java.util.List;
+import java.util.Set;
 
 public class WorkerInputer {
     private Worker worker;
-    private List<Integer> idList;
+    private Set<Integer> idSet;
 
     public WorkerInputer() {
         worker = new Worker();
@@ -18,9 +19,41 @@ public class WorkerInputer {
     }
 
     public void inputWorker() {
-        worker.setId(-1);
-        worker.setName(Validation.getString("Enter Name: ",
-                Validation.NAME_PATTERN,
-                "Invalid input, input must be real name"));
+        if (idSet == null) {
+            worker.setId(utils.Validation.getInt("Enter Code: "));
+
+            worker.setName(Validation.getString("Enter Name: ",
+                    Validation.NAME_PATTERN,
+                    "Invalid input, input must be real name"));
+
+            worker.setAge(Validation.getInt("Enter Age: ", 18, 50));
+
+            worker.setSalary(Validation.getDouble("Enter Salary: ",
+                    0.1, Integer.MAX_VALUE));
+
+            worker.setWorkLocation(Validation.getString("Enter Work Location: "));
+        } else {
+            worker.setId(utils.Validation.getIntWithKeySet("Enter Code: ",
+                    Integer.MIN_VALUE,
+                    Integer.MAX_VALUE,
+                    idSet,
+                    "false",
+                    false));
+
+            worker.setName(Validation.getString("Enter Name: ",
+                    Validation.NAME_PATTERN,
+                    "Invalid input, input must be real name"));
+
+            worker.setAge(Validation.getInt("Enter Age: ",
+                    18,
+                    50));
+
+            worker.setSalary(Validation.getDouble("Enter Salary: ",
+                    0.1,
+                    Integer.MAX_VALUE));
+
+            worker.setWorkLocation(Validation.getString("Enter Work Location: "));
+        }
+
     }
 }
