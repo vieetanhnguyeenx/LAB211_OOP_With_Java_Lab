@@ -2,31 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3063800b-566e-4ca7-a2a4-67bf261c9d04" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../J1.S.P0073_Expense/J1.S.P0073/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../J1.S.P0073_Expense/J1.S.P0073/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../J1.S.P0073_Expense/J1.S.P0073/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../J1.S.P0073_Expense/J1.S.P0073/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../J1.S.P0073_Expense/J1.S.P0073/J1.S.P0073.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../J1.S.P0073_Expense/J1.S.P0073/src/bo/ExpenseInputer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../J1.S.P0073_Expense/J1.S.P0073/src/bo/ExpenseManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../J1.S.P0073_Expense/J1.S.P0073/src/controller/ExpenseManageController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../J1.S.P0073_Expense/J1.S.P0073/src/entity/Expense.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../J1.S.P0073_Expense/J1.S.P0073/src/exception/ExpenseNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../J1.S.P0073_Expense/J1.S.P0073/src/exception/IncorrectCaptcha.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../J1.S.P0073_Expense/J1.S.P0073/src/exception/NumberNotInRangeException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../J1.S.P0073_Expense/J1.S.P0073/src/exception/ObjectNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../J1.S.P0073_Expense/J1.S.P0073/src/exception/StringEmptyException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../J1.S.P0073_Expense/J1.S.P0073/src/exception/StringNotMatchRegexException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../J1.S.P0073_Expense/J1.S.P0073/src/ui/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../J1.S.P0073_Expense/J1.S.P0073/src/utils/Validation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../J1.S.P0071_Task/J1.S.P0071/out/production/J1.S.P0071/bo/TaskInputter.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../J1.S.P0071_Task/J1.S.P0071/out/production/J1.S.P0071/bo/TaskInputter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../J1.S.P0071_Task/J1.S.P0071/out/production/J1.S.P0071/bo/TaskManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../J1.S.P0071_Task/J1.S.P0071/out/production/J1.S.P0071/bo/TaskManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../J1.S.P0071_Task/J1.S.P0071/out/production/J1.S.P0071/controller/TaskController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../J1.S.P0071_Task/J1.S.P0071/out/production/J1.S.P0071/controller/TaskController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../J1.S.P0071_Task/J1.S.P0071/out/production/J1.S.P0071/ui/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../J1.S.P0071_Task/J1.S.P0071/out/production/J1.S.P0071/ui/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../J1.S.P0071_Task/J1.S.P0071/out/production/J1.S.P0071/utils/Validation.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../J1.S.P0071_Task/J1.S.P0071/out/production/J1.S.P0071/utils/Validation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../J1.S.P0071_Task/J1.S.P0071/src/bo/TaskManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../J1.S.P0071_Task/J1.S.P0071/src/bo/TaskManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../J1.S.P0071_Task/J1.S.P0071/src/ui/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../J1.S.P0071_Task/J1.S.P0071/src/ui/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,17 +78,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
@@ -135,6 +100,9 @@
       <workItem from="1701656176600" duration="3226000" />
       <workItem from="1701702126552" duration="1456000" />
       <workItem from="1701739181011" duration="964000" />
+      <workItem from="1701777961854" duration="594000" />
+      <workItem from="1701782378486" duration="596000" />
+      <workItem from="1701828333525" duration="658000" />
     </task>
     <servers />
   </component>
