@@ -1,5 +1,6 @@
 package bo;
 
+import entity.SalaryHistory;
 import entity.Worker;
 
 import java.util.ArrayList;
@@ -33,6 +34,30 @@ public class WorkerManager {
             return workers.add(worker);
 
         throw new Exception("Worker code already exits!");
+    }
+
+    public Worker changeSalary(SalaryHistory.SalaryStatus status, int code, double amount) throws Exception {
+        int index = searchById(code);
+        if (index == -1)
+            throw new Exception("Worker dose not exits!");
+
+        if (amount <= 0)
+            throw new Exception("Amount must be greater than 0!");
+
+        Worker worker = workers.get(index);
+
+        if(status == SalaryHistory.SalaryStatus.UP) {
+            worker.setSalary(worker.getSalary() + amount);
+        }
+
+        if (status == SalaryHistory.SalaryStatus.DOWN) {
+            if (worker.getSalary() - amount < 0.01)
+                throw new Exception("Can not be subtract salary must be greater than 0!");
+
+            worker.setSalary(worker.getSalary() - amount);
+        }
+
+        return worker;
     }
 
     public Set<Integer> getCodeSet() {

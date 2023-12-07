@@ -23,6 +23,7 @@ public class Validation {
     public static final String TIME_NUMBER_PATTERN = "^\\d+\\.([0]|[5])$";
 
     public static final String YES_NO_PATTERN = "^([yY]|[nN]){1}$";
+    public static final String DATE_PATTERN = "dd/MM/yyyy";
 
     private static BufferedReader input = new BufferedReader(new InputStreamReader(System.in));
 

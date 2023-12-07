@@ -1,9 +1,8 @@
 package bo;
 
 import entity.Worker;
-import exception.Validation;
+import utils.Validation;
 
-import java.util.List;
 import java.util.Set;
 
 public class WorkerInputer {
@@ -16,6 +15,10 @@ public class WorkerInputer {
 
     public Worker getWorker() {
         return worker;
+    }
+
+    public void setIdSet(Set<Integer> idSet) {
+        this.idSet = idSet;
     }
 
     public void inputWorker() {

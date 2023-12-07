@@ -1,7 +1,7 @@
 package ui;
 
 import controller.WorkerManageController;
-import exception.Validation;
+import utils.Validation;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -32,10 +32,22 @@ public class Main {
                     }
                     break;
                 case 2:
+                    try {
+                        controller.increaseSalary();
+                    } catch (Exception exception) {
+                        System.out.println(exception.getMessage());
+                    }
                     break;
                 case 3:
+                    try {
+                        controller.decreaseSalary();
+                    } catch (Exception exception) {
+                        System.out.println(exception.getMessage());
+                    }
                     break;
                 case 4:
+                    System.out.println("---------------------------------- Display Information Salary ----------------------------------");
+                    System.out.println(controller.getDisplayedInformationSalary());
                     break;
                 case 5:
                     return;
