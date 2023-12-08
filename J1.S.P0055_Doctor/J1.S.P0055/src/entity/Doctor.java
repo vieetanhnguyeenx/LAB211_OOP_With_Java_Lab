@@ -3,13 +3,13 @@ package entity;
 public class Doctor {
     private String code;
     private String name;
-    private String Specialization;
+    private String specialization;
     private int availability;
 
     public Doctor(String code, String name, String specialization, int availability) {
         this.code = code;
         this.name = name;
-        Specialization = specialization;
+        this.specialization = specialization;
         this.availability = availability;
     }
 
@@ -33,11 +33,11 @@ public class Doctor {
     }
 
     public String getSpecialization() {
-        return Specialization;
+        return specialization;
     }
 
     public void setSpecialization(String specialization) {
-        Specialization = specialization;
+        this.specialization = specialization;
     }
 
     public int getAvailability() {
@@ -46,5 +46,14 @@ public class Doctor {
 
     public void setAvailability(int availability) {
         this.availability = availability;
+    }
+
+    @Override
+    public String toString() {
+        return String.format("%-10s%-20s%-25s%-20s\n",
+                code,
+                name,
+                specialization,
+                availability);
     }
 }
