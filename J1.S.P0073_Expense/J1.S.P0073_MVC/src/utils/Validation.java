@@ -20,7 +20,7 @@ public class Validation {
 
     public static final String TIME_NUMBER_PATTERN = "^\\d+\\.([0]|[5])$";
     public static final String DATE_PATTERN_OUT = "dd-MMM-yyyy";
-    public static final String DATE_PATTERN_IN = "dd-MM-yyyy";
+    public static final String DATE_PATTERN_IN = "dd/MM/yyyy";
 
 
     private static BufferedReader input = new BufferedReader(new InputStreamReader(System.in));
